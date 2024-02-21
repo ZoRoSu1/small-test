@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reading Section</title>
+    <link rel="stylesheet" href="booklist.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo">Booklist</a>
+        </header>
+        <div class="listBooks">
+            <!-- Im ggonna keep writin till death ! -->
+            <div class="block glow">
+                <div class="book" >
+                    <img src="image/2.jpg" alt="Book 1">
+                    <h2>You've reached <br>Sam</h2>
+                    <p>by Dustin Thao</p>
+                    <button class="readButton">Options</button>
+                    <div class="optionsMenu">
+                        <button>Read Now</button>
+                        <button>Done Reading</button>
+                        <button>In Progress</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="block glow">
+                <div class="book" id="">
+                    <img src="image/1.png" alt="Book 2">
+                    <h2>A court of<br>
+                    thorns</h2>
+                    <p>Sarah J. Maas</p>
+                    <button class="readButton">Options</button>
+                    <div class="optionsMenu">
+                        <button>Read Now</button>
+                        <button>Done Reading</button>
+                        <button>In Progress</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="block glow">
+                <div class="book" id="bk1">
+                    <img src="image/2.jpg" alt="Book 3">
+                    <h2>You've reached <br>Sam</h2>
+                    <p>by Dustin Thao</p>
+                    <button class="readButton">Options</button>
+                    <div class="optionsMenu">
+                        <button>Read Now</button>
+                        <button>Done Reading</button>
+                        <button>In Progress</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="block glow">
+                <div class="book" id="bk1">
+                    <img src="image/2.jpg" alt="Book 4">
+                    <h2>You've reached <br>Sam</h2>
+                    <p>by Dustin Thao</p>
+                    <button class="readButton">Options</button>
+                    <div class="optionsMenu">
+                        <button>Read Now</button>
+                        <button>Done Reading</button>
+                        <button>In Progress</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const buttons = document.querySelectorAll(".readButton");
+            
+            buttons.forEach(button => {
+                button.addEventListener("click", function() {
+                    const optionsMenu = this.nextElementSibling;
+                    optionsMenu.classList.toggle("show");
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

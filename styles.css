@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Namdhinggo:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kode+Mono:wght@400..700&family=Namdhinggo:wght@400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+
+header {
+    text-align: center; 
+    padding: 10px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center; 
+    text-decoration: none;
+    color: #fff; 
+    font-size: 3rem;
+    animation: neonGlow 1s infinite alternate;
+    margin: 0 auto; 
+}
+@keyframes neonGlow {
+    0% {
+        text-shadow: 0 0 10px #5600a6, 0 0 20px #8a2be2, 0 0 30px #5600a6, 0 0 40px #8a2be2, 0 0 70px #5600a6, 0 0 80px #8a2be2, 0 0 100px #5600a6, 0 0 150px #5600a6;
+    }
+    100% {
+        text-shadow: 0 0 10px #5600a6, 0 0 20px #8a2be2, 0 0 30px #5600a6, 0 0 40px #8a2be2, 0 0 70px #5600a6, 0 0 80px #8a2be2, 0 0 100px #5600a6, 0 0 150px #5600a6;
+    }
+}
+
+.menu-toggle {
+    font-size: 1.5rem;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.paragraph
+{
+    font-family: "Josefin Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 300t;
+    font-style: normal;
+    font-size: 24px;
+    color: #fff; 
+    padding: 0;
+    text-align: center; 
+    margin-top: 50px; 
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+}
+footer{
+    background: linear-gradient(to top, #000 ,  transparent);
+    background-color: transparent;
+    color:#fff;
+    padding: 50px;
+    text-align: center;
+}
+.block 
+{
+    position: relative;
+    border-radius: 25px;
+    background: linear-gradient(0deg , #000 , rgb(44 , 43 , 43));
+    text-align: center; 
+    margin: 20px auto; 
+    width: fit-content; 
+    padding: 10px;
+}
+.glow::before,
+.glow::after 
+{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg,#170264,   #3a0368, #261342, #2b115c,
+     #170264,  #0b0449);
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    border-radius: 25px;
+    z-index: -1;
+    animation: animate 40s linear infinite;
+}
+@keyframes animate 
+{
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0 ;
+    }
+}
+.glow::after 
+{
+    filter: blur(40px);
+}
+button 
+{
+    width: 165px;
+    height: 62px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: transparent ;
+    transition: 0.1s;
+}
+button:hover
+{
+    text-shadow: 0 0 10px #5600a6, 0 0 20px #8a2be2;
+    z-index: 0;
+}
+
+button:active 
+{
+    color: #f7f7f7;
+    text-shadow: 0 0 10px #5600a6, 0 0 20px #8a2be2, 0 0 30px #5600a6, 0 0 40px #8a2be2, 0 0 70px #5600a6, 0 0 80px #8a2be2, 0 0 100px #5600a6, 0 0 150px #5600a6;
+    transform: scale(0.9) rotate(4deg);
+    background: transparent;
+    transition: 0.5s;
+}
+main
+{
+    padding-top: 50px;
+}
